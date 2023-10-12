@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Instagram Clone</string>
+
+
+    <string name="enter_name">Enter Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_add">Add</string>
+    <string name="title_reel">Reel</string>
+    <string name="title_profile">Profile</string>
+
+
+    <string name="edit">Edit</string>
+    <string name="post">Post</string>
+    <string name="select_reel">Select Reel</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_post">Add Post</string>
+    <string name="share_to_post">Share To Post</string>
+    <string name="share_to_reel">Share To Reel</string>
+    <string name="upload_reel">Upload Reel</string>
+    <string name="write_a_caption">Write a Caption</string>
+
+    <string name="post_caption">Your post may be appear in Posts can be seen on posts tab under your profile</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
