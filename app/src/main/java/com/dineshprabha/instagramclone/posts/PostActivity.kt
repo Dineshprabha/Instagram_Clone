@@ -66,8 +66,8 @@ class PostActivity : AppCompatActivity() {
                 val post: Post = Post(
                     postUrl = imageUrl!!,
                     caption = binding.etCaption.editText?.text.toString(),
-                    name = user.name,
-                    timer = System.currentTimeMillis().toString()
+                    uid = Firebase.auth.currentUser!!.uid,
+                    time = System.currentTimeMillis().toString()
                 )
 
                     Firebase.firestore.collection(POST).document().set(post).addOnSuccessListener {

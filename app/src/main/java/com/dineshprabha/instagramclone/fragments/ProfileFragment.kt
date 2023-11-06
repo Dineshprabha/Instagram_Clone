@@ -2,17 +2,17 @@ package com.dineshprabha.instagramclone.fragments
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.dineshprabha.instagramclone.R
+import androidx.fragment.app.Fragment
+import com.dineshprabha.instagramclone.LoginActivity
 import com.dineshprabha.instagramclone.RegisterActivity
 import com.dineshprabha.instagramclone.adapters.ViewPagerAdapter
 import com.dineshprabha.instagramclone.databinding.FragmentProfileBinding
 import com.dineshprabha.instagramclone.model.User
 import com.dineshprabha.instagramclone.utils.USER_NODE
-import com.dineshprabha.instagramclone.utils.USER_PROFILE_FOLDER
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.firestore.ktx.toObject
@@ -53,6 +53,12 @@ class ProfileFragment : Fragment() {
         viewPagerAdapter.addFragments(MyReelFragment(),"Reels")
         binding.profileViewPager.adapter = viewPagerAdapter
         binding.tabLayout.setupWithViewPager(binding.profileViewPager)
+
+        binding.btnLogout.setOnClickListener {
+            FirebaseAuth.getInstance().signOut()
+            activity?.startActivity(Intent(requireActivity(), LoginActivity ::class.java))
+            activity?.finish()
+        }
     }
 
 

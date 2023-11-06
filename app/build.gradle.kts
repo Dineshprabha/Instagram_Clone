@@ -58,6 +58,8 @@ dependencies {
     //gson dependency
     implementation ("com.google.code.gson:gson:2.8.9")
 
+    implementation("com.github.marlonlom:timeago:4.0.3")
+
     implementation("com.google.firebase:firebase-auth-ktx:22.1.2")
     implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
     implementation("com.google.firebase:firebase-firestore-ktx:24.8.1")
